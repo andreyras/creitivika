@@ -23,6 +23,22 @@ vidimost_polya=[["•","•","•","•","•","•","•","•","•","•","�
                 ["•","•","•","•","•","•","•","•","•","•","•","•"],
                 ["•","•","•","•","•","•","•","•","•","•","•","•"],
                 ["•","•","•","•","•","•","•","•","•","•","•","•"]]
+a=random.randint(0,11)
+b=random.randint(0,11)
+c=random.randint(0,11)
+v=random.randint(0,11)
+p=random.randint(0,11)
+y=random.randint(0,11)
+i=random.randint(0,11)
+j=random.randint(0,11)
+pole[a][b]='0'
+pole[c][v]='0'
+pole[p][y]='0'
+for i in range(0,11):
+    if pole[stroka][stolb]=='!':
+        pole[str+i+1][stolb]='1'
+        pole[str+i-1][stolb]='1'
+        pole[str+i][stolb+1]='1'
 for i in range(5):
     zstr=random.randint(1,11)
     ystr=random.randint(1,11)
@@ -69,5 +85,4 @@ def isOpen():
             # значит неправда, поле ещё не всё открыто
             opened = False
     return opened
-
 
